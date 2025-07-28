@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+@theme{
+  --color-mainColor:#FFEAEA;
+  --color-txtColor:#E8988A;
+  --color-primaryColor:#D76C82;
+  --color-secondaryColor: #B9375D;
+}
+@utility container{
+    margin: 0 auto;
+    @media (width >= 60rem /* 1280px */) {
+        max-width: 60rem /* 1280px */;
+    }
+}
+body {
+  font-family: 'Outfit Variable', sans-serif;
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white;
+}
